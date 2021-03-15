@@ -1,4 +1,4 @@
-package MyStepDefs;
+package stepDefinitions;
 
 import demo.App;
 import io.cucumber.java.en.Given;
