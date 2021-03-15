@@ -1,0 +1,48 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-15T22:37:09.489Z",
+        "line": 4,
+        "name": "Running the first test",
+        "description": "",
+        "id": "my-example-test;running-the-first-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter a message",
+            "match": {
+              "location": "stepDefinitions.MyStepdefs.iEnterAMessage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I run the message",
+            "match": {
+              "location": "stepDefinitions.MyStepdefs.iRunTheMessage()"
+            },
+            "keyword": "When "
+          }
+        ]
+      }
+    ],
+    "name": "My example test",
+    "description": "  Getting the basics up and running",
+    "id": "my-example-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/mytest.feature",
+    "tags": []
+  }
+]
