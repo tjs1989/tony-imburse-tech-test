@@ -1,4 +1,4 @@
-package utils;
+package com.utils;
 
 import org.apache.commons.codec.digest.HmacAlgorithms;
 import org.apache.commons.codec.digest.HmacUtils;
@@ -10,19 +10,19 @@ import java.util.Date;
 
 public class Utils {
 
-    public static byte[] decodeStringToBase64(String string) {
+    public byte[] decodeStringToBase64(String string) {
             return Base64.getDecoder().decode(string);
     }
 
-    public static String encodeByteToBase64(byte[] byteToEncode){
+    public  String encodeByteToBase64(byte[] byteToEncode){
         return Base64.getEncoder().encodeToString(byteToEncode);
     }
 
-    public static long getTimestamp(){
+    public long getTimestamp(){
         return new Date().getTime() / 1000;
     }
 
-    public static String generateHmac(String publicKey, String privateKey) {
+    public String generateHmac(String publicKey, String privateKey) {
         byte[] privateKeyBytes = decodeStringToBase64(privateKey);
         String bodySignature = "";
         long timestamp = getTimestamp();
