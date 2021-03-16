@@ -1,6 +1,5 @@
-Feature: My example test
-  Getting the basics up and running
+Feature: Creating Instructions and orders
+  Happy path for creating the instructions and orders
 
   Scenario: Running the first test
-    Given I enter a message
-    When I run the message
+    Given I have an order for "Ireland" with a currency of "Euro"

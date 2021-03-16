@@ -3,46 +3,55 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-15T22:37:09.489Z",
+        "start_timestamp": "2021-03-16T22:17:13.296Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2080000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.getToken()"
+            }
+          }
+        ],
         "line": 4,
         "name": "Running the first test",
         "description": "",
-        "id": "my-example-test;running-the-first-test",
+        "id": "creating-instructions-and-orders;running-the-first-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 33000000,
+              "duration": 209000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "I enter a message",
+            "name": "I have an order for \"Ireland\" with a currency of \"Euro\"",
             "match": {
-              "location": "stepDefinitions.MyStepdefs.iEnterAMessage()"
+              "arguments": [
+                {
+                  "val": "\"Ireland\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"Euro\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iHaveAnOrderForWithACurrencyOf(java.lang.String,java.lang.String)"
             },
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "I run the message",
-            "match": {
-              "location": "stepDefinitions.MyStepdefs.iRunTheMessage()"
-            },
-            "keyword": "When "
           }
         ]
       }
     ],
-    "name": "My example test",
-    "description": "  Getting the basics up and running",
-    "id": "my-example-test",
+    "name": "Creating Instructions and orders",
+    "description": "  Happy path for creating the instructions and orders",
+    "id": "creating-instructions-and-orders",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/mytest.feature",
+    "uri": "file:src/test/resources/features/instructionCreation.feature",
     "tags": []
   }
 ]

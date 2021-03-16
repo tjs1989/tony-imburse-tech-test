@@ -1,20 +1,18 @@
 package com.common;
 
 public enum CurrencyCodes {
-    UNITED_KINGDOM("GB"),
-    IRELAND("IE"),
-    USA("US"),
-    FRANCE("FR"),
-    GERMANY("DE");
+    BRITISH_POUND("GBP"),
+    EURO("EUR"),
+    US_DOLLAR("USD");
 
-    private String countryCode;
+    private String currencyCode;
 
-    CurrencyCodes(String countryCode) {
-        this.countryCode = countryCode;
+    CurrencyCodes(String currencyCode) {
+        this.currencyCode = currencyCode;
     }
 
-    public String getCountryCode() {
-        return countryCode;
+    public String getCurrencyCode() {
+        return currencyCode;
     }
 }
 

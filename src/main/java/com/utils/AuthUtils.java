@@ -8,7 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 import java.util.Date;
 
-public class Utils {
+public class AuthUtils {
 
     public byte[] decodeStringToBase64(String string) {
             return Base64.getDecoder().decode(string);
@@ -34,9 +34,6 @@ public class Utils {
         String signedSignature = encodeByteToBase64(hashedSignature);
 
         String hmac = publicKey + ":" + nonce + ":" + timestamp + ":" + signedSignature;
-
-        System.out.println("Hmac is: " + hmac);
-
         return hmac;
     }
 }
