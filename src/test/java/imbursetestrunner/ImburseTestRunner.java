@@ -10,8 +10,8 @@ import org.junit.runner.RunWith;
         glue = "stepDefinitions",
         publish = false,
         plugin = {"pretty",
-                "html:target/cucumberReports/mobile/html",
-                "json:target/cucumberReports/mobile/json"
+                "html:target/imburseReports/html/imburseReport.html",
+                "json:target/imburseReports/json/imburseReport.json"
         })
 public class ImburseTestRunner {
 }
