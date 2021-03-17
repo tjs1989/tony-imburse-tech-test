@@ -11,6 +11,7 @@ repositories {
 
 def testRunnerRegex = '**/ImburseTestRunner*'
 def apiFeatureFilesPath = 'src/test/resources/features/'
+def imburseTests = "Imburse API Tests"
 
 dependencies {
     testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.19.0'
@@ -31,21 +32,21 @@ configurations {
     }
 }
 
-task regressionTests(type: Test) {
+task regressionTests(type: Test, group: imburseTests) {
     include testRunnerRegex
 }
 
-task negativeTests(type: Test) {
+task negativeTests(type: Test, group: imburseTests) {
     include testRunnerRegex
     systemProperty("cucumber.filter.tags", "@negativeTests")
 }
 
-task orderTests(type: Test) {
+task orderTests(type: Test, group: imburseTests) {
     include testRunnerRegex
     systemProperty("cucumber.features", apiFeatureFilesPath + "orderCreation")
 }
 
-task instructionTests(type: Test) {
+task instructionTests(type: Test, group: imburseTests) {
     include testRunnerRegex
     systemProperty("cucumber.features", apiFeatureFilesPath + "instructionCreation")
 }
