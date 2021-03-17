@@ -9,10 +9,13 @@ This framework runs some tests against the requirements specified in the given d
 
 ## Usage
 To run the tests please use an IDE or run any of the following commands from the command line:
-``./gradlew regressionTests`` - Runs all tests
-``./gradlew negativeTests`` - Runs only the negative scenarios
-``./gradlew orderTests`` - Runs just the order endpoint tests
-``./gradlew instructionTests`` - Runs just the instruction creation tests
+
+| Command       | Action        | 
+| ------------- |:-------------:| 
+| ``./gradlew regressionTests``| Runs all tests |
+| ``./gradlew negativeTests`` | Runs only the negative scenarios|
+| ``./gradlew orderTests`` | Runs just the order endpoint tests|
+|``./gradlew instructionTests`` | Runs just the instruction creation tests|
 
 ## Implementation Notes
 
