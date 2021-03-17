@@ -8,7 +8,7 @@ This framework runs some tests against the requirements specified in the given d
 - Gradle
 
 ## Usage
-To run the tests please use an IDE or run any of the following commands from the command line:
+To run the tests please use an IDE to run the specific tasks from the `build.gradle` file, or run any of the following commands from the command line:
 
 | Command       | Action        | 
 | ------------- |:-------------:| 
@@ -20,7 +20,8 @@ To run the tests please use an IDE or run any of the following commands from the
 ## Implementation Notes
 
 ### Foreword
-Given my previous Java experience, I have brushed up on my Java to use Cucumber JVM. I prefer Gradle to Maven hence I chose to use it. 
+Given my previous Java experience, I have brushed up on my Java to use Cucumber JVM. I prefer Gradle to Maven and I have more
+experience using it, which is why it is in use here.
 I have not used Java in anger since the summer of 2020, so I may be a little rusty in the code.
 
 From previous experience I know that the official documentation on how to use Cucumber JVM with Gradle is not the best in comparison to using Maven.
@@ -47,11 +48,11 @@ The report is available in 2 formats (html and json) and is available within the
 section is run. The JSON output is more designed for if this was to be plugged into a CI. It is an extra one liner in the runner to add it, so I thought why not? :)
 
 ### Framework Architecture
-Given that I have come from a predominant UI testing and automation background, I am sure that it is no surprise to hear that this is the first time that I have wrote proper automation for APIs.
+Given that I have predominantly come from a UI testing and automation background, I am sure that it is no surprise to hear that this is the first time that I have wrote proper automation for APIs.
 I have therefore opted to use Rest Assured becuase it plays very nicely with Cucumber. This has been the bulk of my learning whilst finshing this tech test, and I am very happy that I now know how to 
 use the basics of it :)
 
-I like to make the tests as easy to read as possible, and I also like to modularise as much of the components as I can. To that end I have created separate packages
+I like to make tests as easy to read as possible, and I also like to modularise as much of the components as I can. To that end I have created separate packages
 to handle the API interactions and utility methods. I have also created a common package to handle things such as constants and country code lookups. I couldn't find 
 any decent Country or Currency code libraries which had the required ISO standards, so I wrote my own Enums instead :)
 
@@ -59,6 +60,8 @@ any decent Country or Currency code libraries which had the required ISO standar
 The tests which have been written mostly check for things upon response codes. I like the assertions on offer from the AssertJ library, so I have opted to use them.
 If I had more time then an additional improvement which I would make to the tests would be to sift through the response bodies to see if there was any additinal verifications which we could do. 
 An example would be to check that the error messages in the nested json array for failed attempts are correct etc.
+
+Please do get in touch if you have any questions. I very much look forward to your reply.
 
 
 
