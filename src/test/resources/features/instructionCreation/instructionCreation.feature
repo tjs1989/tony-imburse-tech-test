@@ -11,6 +11,7 @@ Feature: Creating Instructions
     When I submit the instruction
     Then I receive an instruction response code of 201
 
+  @negativeTests
   Scenario: Error when recreating the same instruction
     Given I create an Instruction for "Ireland" with a currency of "Euro"
     When I submit the instruction

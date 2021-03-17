@@ -3,11 +3,319 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-03-16T22:17:13.296Z",
+        "line": 4,
+        "name": "Create an order",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an order reference of 45 characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "45",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iHaveAnOrderReferenceOfCharacters(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 371000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I create an order with instructions for \"Ireland\" with a currency of \"Euro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ireland\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"Euro\"",
+                  "offset": 69
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iCreateAnOrderWithInstructionsForWithACurrencyOf(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 92000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I receive the order creation code of 202",
+            "match": {
+              "arguments": [
+                {
+                  "val": "202",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iReceiveTheOrderCreationCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-17T02:24:39.588Z",
         "before": [
           {
             "result": {
-              "duration": 2080000000,
+              "duration": 1498000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.getToken()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Successfully creating an instruction",
+        "description": "",
+        "id": "creating-instructions;successfully-creating-an-instruction",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I create an Instruction for \"Ireland\" with a currency of \"Euro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ireland\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Euro\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.InstructionCreationStepDefs.iCreateAnInstructionForWithACurrencyOf(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 180000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I submit the instruction",
+            "match": {
+              "location": "stepdefinitions.InstructionCreationStepDefs.iSubmitTheInstruction()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I receive an instruction response code of 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.InstructionCreationStepDefs.iReceiveAnInstructionResponseCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Create an order",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have an order reference of 45 characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "45",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iHaveAnOrderReferenceOfCharacters(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 463000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I create an order with instructions for \"Ireland\" with a currency of \"Euro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ireland\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"Euro\"",
+                  "offset": 69
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iCreateAnOrderWithInstructionsForWithACurrencyOf(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I receive the order creation code of 202",
+            "match": {
+              "arguments": [
+                {
+                  "val": "202",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iReceiveTheOrderCreationCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-17T02:24:41.797Z",
+        "before": [
+          {
+            "result": {
+              "duration": 256000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.getToken()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Error when recreating the same instruction",
+        "description": "",
+        "id": "creating-instructions;error-when-recreating-the-same-instruction",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I create an Instruction for \"Ireland\" with a currency of \"Euro\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Ireland\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Euro\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepdefinitions.InstructionCreationStepDefs.iCreateAnInstructionForWithACurrencyOf(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 232000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I submit the instruction",
+            "match": {
+              "location": "stepdefinitions.InstructionCreationStepDefs.iSubmitTheInstruction()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 159000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I submit the instruction again",
+            "match": {
+              "location": "stepdefinitions.InstructionCreationStepDefs.iSubmitTheInstructionAgain()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I receive an instruction response code of 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.InstructionCreationStepDefs.iReceiveAnInstructionResponseCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negativeTests"
+          }
+        ]
+      }
+    ],
+    "name": "Creating Instructions",
+    "description": "  Creating instructions after an order has been created",
+    "id": "creating-instructions",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/instructionCreation/instructionCreation.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-17T02:24:42.924Z",
+        "before": [
+          {
+            "result": {
+              "duration": 360000000,
               "status": "passed"
             },
             "match": {
@@ -16,42 +324,306 @@
           }
         ],
         "line": 4,
-        "name": "Running the first test",
+        "name": "Creating an order with instructions",
         "description": "",
-        "id": "creating-instructions-and-orders;running-the-first-test",
+        "id": "creating-orders;creating-an-order-with-instructions",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 209000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 5,
-            "name": "I have an order for \"Ireland\" with a currency of \"Euro\"",
+            "name": "I have an order reference of 45 characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "45",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iHaveAnOrderReferenceOfCharacters(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 388000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I create an order with instructions for \"Ireland\" with a currency of \"Euro\"",
             "match": {
               "arguments": [
                 {
                   "val": "\"Ireland\"",
-                  "offset": 20
+                  "offset": 40
                 },
                 {
                   "val": "\"Euro\"",
-                  "offset": 49
+                  "offset": 69
                 }
               ],
-              "location": "stepdefinitions.OrderCreationStepDefs.iHaveAnOrderForWithACurrencyOf(java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.OrderCreationStepDefs.iCreateAnOrderWithInstructionsForWithACurrencyOf(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I receive the order creation code of 202",
+            "match": {
+              "arguments": [
+                {
+                  "val": "202",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iReceiveTheOrderCreationCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-17T02:24:43.686Z",
+        "before": [
+          {
+            "result": {
+              "duration": 165000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.getToken()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Creating an order without instructions",
+        "description": "",
+        "id": "creating-orders;creating-an-order-without-instructions",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I have an order reference of 25 characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "25",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iHaveAnOrderReferenceOfCharacters(int)"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I create an order without instructions",
+            "match": {
+              "location": "stepdefinitions.OrderCreationStepDefs.iCreateAnOrderWithoutInstructions()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I receive the order creation code of 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iReceiveTheOrderCreationCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-17T02:24:44.033Z",
+        "before": [
+          {
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.getToken()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Creating an order which was already created",
+        "description": "",
+        "id": "creating-orders;creating-an-order-which-was-already-created",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I have an order reference of 35 characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "35",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iHaveAnOrderReferenceOfCharacters(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 161000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I create an order without instructions",
+            "match": {
+              "location": "stepdefinitions.OrderCreationStepDefs.iCreateAnOrderWithoutInstructions()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 154000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I create an order without instructions using the same reference",
+            "match": {
+              "location": "stepdefinitions.OrderCreationStepDefs.iCreateAnOrderWithoutInstructionsUsingTheSameReference()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I receive the order creation code of 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iReceiveTheOrderCreationCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negativeTests"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-17T02:24:44.536Z",
+        "before": [
+          {
+            "result": {
+              "duration": 478000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hooks.getToken()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Creating an order which exceeds the reference character length",
+        "description": "",
+        "id": "creating-orders;creating-an-order-which-exceeds-the-reference-character-length",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I have an order reference of 255 characters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "255",
+                  "offset": 29
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iHaveAnOrderReferenceOfCharacters(int)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I create an order without instructions",
+            "match": {
+              "location": "stepdefinitions.OrderCreationStepDefs.iCreateAnOrderWithoutInstructions()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I receive the order creation code of 400",
+            "match": {
+              "arguments": [
+                {
+                  "val": "400",
+                  "offset": 37
+                }
+              ],
+              "location": "stepdefinitions.OrderCreationStepDefs.iReceiveTheOrderCreationCodeOf(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@negativeTests"
           }
         ]
       }
     ],
-    "name": "Creating Instructions and orders",
-    "description": "  Happy path for creating the instructions and orders",
-    "id": "creating-instructions-and-orders",
+    "name": "Creating Orders",
+    "description": "  Tests to confirm that we can create orders",
+    "id": "creating-orders",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/instructionCreation.feature",
+    "uri": "file:src/test/resources/features/orderCreation/OrderCreation.feature",
     "tags": []
   }
 ]
